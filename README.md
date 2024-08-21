@@ -33,7 +33,7 @@ tensorboard (>= 2.11.2)
 ## 📂Dataset
 
 - We assessed the effectiveness of our proposed method using three publicly available MMEA datasets: **DBP15K, MMKG, Multi-OpenEA**
-- Download from [GoogleDrive](https://drive.google.com/file/d/1VIWcc3KDcLcRImeSrF2AyhetBLq_gsnx/view?usp=sharing) (1.26G) and unzip it to make those files **satisfy the following file hierarchy**:
+- Download from [GoogleDrive](https://drive.google.com/file/d/14CMfyg9q6ddnXGlxrj96RQZhbX9kwqJ6/view?usp=sharing) (1.3G) and unzip it to make those files **satisfy the following file hierarchy**:
 
 ```bash
 ROOTs
@@ -43,7 +43,7 @@ ROOTs
 ```
 MMKG details：
 ```bash
-MMKG
+mmkg
 ├─DBP15K
 │  ├─fr_en
 │  │      ent_ids_1
@@ -77,9 +77,6 @@ MMKG
 │          triples_1
 │          triples_2
 │
-├─embedding
-│      glove.6B.300d.txt
-│
 ├─FBDB15K
 │  └─norm
 │          ent_ids_1
@@ -100,6 +97,47 @@ MMKG
 │          triples_1
 │          triples_2
 │
+├─OpenEA
+│  ├─OEA_D_W_15K_V1
+│  │      ent_ids_1
+│  │      ent_ids_2
+│  │      ill_ent_ids
+│  │      rel_ids
+│  │      training_attrs_1
+│  │      training_attrs_2
+│  │      triples_1
+│  │      triples_2
+│  │
+│  ├─OEA_D_W_15K_V2
+│  │      ent_ids_1
+│  │      ent_ids_2
+│  │      ill_ent_ids
+│  │      rel_ids
+│  │      training_attrs_1
+│  │      training_attrs_2
+│  │      triples_1
+│  │      triples_2
+│  │
+│  ├─OEA_EN_DE_15K_V1
+│  │      ent_ids_1
+│  │      ent_ids_2
+│  │      ill_ent_ids
+│  │      rel_ids
+│  │      training_attrs_1
+│  │      training_attrs_2
+│  │      triples_1
+│  │      triples_2
+│  │
+│  └─OEA_EN_FR_15K_V1
+│          ent_ids_1
+│          ent_ids_2
+│          ill_ent_ids
+│          rel_ids
+│          training_attrs_1
+│          training_attrs_2
+│          triples_1
+│          triples_2
+│
 └─pkls
         dbpedia_wikidata_15k_dense_GA_id_img_feature_dict.pkl
         dbpedia_wikidata_15k_norm_GA_id_img_feature_dict.pkl
@@ -107,6 +145,10 @@ MMKG
         FBYG15K_id_img_feature_dict.pkl
         fr_en_GA_id_img_feature_dict.pkl
         ja_en_GA_id_img_feature_dict.pkl
+        OEA_D_W_15K_V1_id_img_feature_dict.pkl
+        OEA_D_W_15K_V2_id_img_feature_dict.pkl
+        OEA_EN_DE_15K_V1_id_img_feature_dict.pkl
+        OEA_EN_FR_15K_V1_id_img_feature_dict.pkl
         zh_en_GA_id_img_feature_dict.pkl
 ```
 ## ⛷️Train
