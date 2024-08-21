@@ -38,22 +38,88 @@ tensorboard (>= 2.11.2)
 ```bash
 ROOTs
 ├── data
-│   └── datasets
+│   └── MMKG
 └── PMF-MMEA
 ```
-
+MMKG details：
+```bash
+MMKG
+├─DBP15K
+│  ├─fr_en
+│  │      ent_ids_1
+│  │      ent_ids_2
+│  │      ill_ent_ids
+│  │      training_attrs_1
+│  │      training_attrs_2
+│  │      triples_1
+│  │      triples_2
+│  │
+│  ├─ja_en
+│  │      ent_ids_1
+│  │      ent_ids_2
+│  │      ill_ent_ids
+│  │      training_attrs_1
+│  │      training_attrs_2
+│  │      triples_1
+│  │      triples_2
+│  │
+│  ├─translated_ent_name
+│  │      dbp_fr_en.json
+│  │      dbp_ja_en.json
+│  │      dbp_zh_en.json
+│  │
+│  └─zh_en
+│          ent_ids_1
+│          ent_ids_2
+│          ill_ent_ids
+│          training_attrs_1
+│          training_attrs_2
+│          triples_1
+│          triples_2
+│
+├─embedding
+│      glove.6B.300d.txt
+│
+├─FBDB15K
+│  └─norm
+│          ent_ids_1
+│          ent_ids_2
+│          ill_ent_ids
+│          training_attrs_1
+│          training_attrs_2
+│          triples_1
+│          triples_2
+│
+├─FBYG15K
+│  └─norm
+│          ent_ids_1
+│          ent_ids_2
+│          ill_ent_ids
+│          training_attrs_1
+│          training_attrs_2
+│          triples_1
+│          triples_2
+│
+└─pkls
+        dbpedia_wikidata_15k_dense_GA_id_img_feature_dict.pkl
+        dbpedia_wikidata_15k_norm_GA_id_img_feature_dict.pkl
+        FBDB15K_id_img_feature_dict.pkl
+        FBYG15K_id_img_feature_dict.pkl
+        fr_en_GA_id_img_feature_dict.pkl
+        ja_en_GA_id_img_feature_dict.pkl
+        zh_en_GA_id_img_feature_dict.pkl
+```
 ## ⛷️Train
 
 ### quick start
 
 ```bash
-
 # DBP15K
 >> bash run_dbp.sh 
 # MMKG
->> bash run_mmkg.sh
+>> bash run_fb.sh
 # Multi-OpenEA
->> bash run_openea.sh
+>> bash run_oea.sh
 ```
 
 ## 🥇Results
@@ -65,10 +131,11 @@ Model performance report can be found in the file `PMF-MMEA/results/reports.csv`
 ## 📝Cite
 
 ```
-@article{huang2024progressively,
+@inproceedings{huang2024progressively,
   title={Progressively Modality Freezing for Multi-Modal Entity Alignment},
   author={Huang, Yani and Zhang, Xuefeng and Zhang, Richong and Chen, Junfan and Kim, Jaein},
-  journal={arXiv preprint arXiv:2407.16168},
+  booktitle={Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  pages={3477--3489},
   year={2024}
 }
 ```
