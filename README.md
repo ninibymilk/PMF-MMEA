@@ -124,7 +124,7 @@ MMKG
 
 ## 🥇Results
 
-Model performance report can be found in the file `PMF-MMEA/results/reports.csv`
+Model performance report can be found in the file `PMF-MMEA/results/report.csv`
 
 ![results](images/results.png)
 
