@@ -23,7 +23,7 @@ class PMFusion(nn.Module):
             args: Model arguments containing configurations.
             ent_num: Number of entities.
             modal_num: Number of modalities.
-            with_weight: Whether to apply weights in normalization (default is 1).
+            with_weight: Whether to apply weights in fusion (default is 1).
         """
         super().__init__()
         self.args = args

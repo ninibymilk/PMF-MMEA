@@ -16,7 +16,7 @@ Empirical evaluations on 9 sub-datasets affirm the superiority of PMF.
 
 ```bash
 >> cd PMF-MMEA
->> pip install -r requirement.txt
+>> pip install -r requirements.txt
 ```
 
 ### details
